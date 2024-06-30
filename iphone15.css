@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: white;
+}
+.navigation{
+    position: fixed;
+    width: 100%;
+}
+.navigation >nav >ul >li >a{
+    color: black;
+}
+.lit{
+    padding-top: 7rem;
+}
+.lit >img{
+    width: 100%;
+}
+.high{
+    padding: 5rem 0;
+    width: 85%;
+    margin: 3% auto;
+    background: rgba(255, 192, 203, 0.192);
+    border-radius: 20px;
+}
+.high >h1{
+    font-size: 3rem;
+}
+.high >img{
+    width: 95%;
+    border-radius: 15px;
+}
+.dyna{
+    background: rgb(247, 246, 246);
+
+}
+.dyna >h1{
+    font-size: 3rem;
+    width: 35%;
+    margin-bottom: 2rem;
+}
+.dyna >p{
+    margin: 2rem 0;
+    font-size: large;
+}
+.dyna >img{
+    width: 89%;
+}
+.focus{
+    width: 70%;
+}
+.focus >h1{
+    font-size: 4rem;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.focus >p{
+    margin: 2rem 0;
+    font-size: larger;
+    color: rgb(58, 56, 56);
+    width: 70%;
+}
+.focus >h2{
+    font-size: 5rem;
+    background: rgba(0, 128, 0, 0.11);
+    border-radius: 25px;
+    margin-top: 3rem;
+}
+.chip{
+    background: black;
+    padding: 4rem;
+}
+.chip >h1{
+    font-size: 3.5rem;
+}
+.chip >p{
+    font-size: large;
+    width: 65%;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(78, 78, 78);
+    padding: 2.5rem 3.5rem 2rem 3rem;
+}
+footer >div >nav >ul >li{
+    list-style: none;
+}
+footer >div >nav >ul >li >a{
+    text-decoration: none;
+    color: black;
+    margin: 1rem 0;
+}
+footer >div >nav >ul >li >a:hover{
+    border-bottom: solid 1px black;
+}
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+@media(min-width:1501px){
+    .desktop{
+        display: block;
+    }
+}
+@media (min-width:851px) and (max-width:1365px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .dyna >h1{
+        width: 100%;
+    }
+    .focus{
+        width: 90%;
+    }
+    .focus >h1{
+        width: 95%;
+    }
+    .focus >img{
+        width: 100%;
+    }
+    .chip >img{
+        width: 100%;
+    }
+    .chip >P{
+        width: 99%;
+    }
+}
+@media (min-width:330px) and (max-width:850px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .dyna >h1{
+        width: 100%;
+    }
+    .focus{
+        width: 90%;
+    }
+    .focus >h1{
+        width: 95%;
+    }
+    .focus >img{
+        width: 100%;
+    }
+    .chip >img{
+        width: 100%;
+    }
+    .chip >P{
+        width: 99%;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer >div:nth-child(1),footer >div:nth-child(2){
+        width: 49%;
+    }
+    footer >div:nth-child(3),footer >div:nth-child(4){
+        width: 49%;
+    }
+}

@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background:  rgb(34, 34, 34);
+}
+.navigation{
+    position: fixed;
+    width: 100%;
+    background: black;
+    display: block;
+}
+.navigation >nav >ul >li >a{
+    color: white;
+}
+.itop{
+    padding-top: 7rem;
+    background: black;
+}
+.itop >h1{
+    font-size: 4rem;
+}
+.itop >h2{
+    color: gray;
+    font-weight: 900;
+    letter-spacing: 2rem;
+    margin-top: 3rem;
+}
+.itop >img{
+    width: 70%;
+    height: 300px;
+}
+.high{
+    padding: 5rem;
+    width: 100%;
+    margin: 0% auto;
+    background: black;
+}
+.high >h1{
+    font-size: 3rem;
+    padding: 1rem;
+}
+.high >img{
+    width: 95%;
+    border-radius: 15px;
+}
+.high >h3{
+    width: 75%;
+    margin-top: 3rem;
+}
+.dream{
+    background: black;
+    color: white;
+}
+.dream >h1{
+    font-size: 5rem;
+    line-height: 6rem;
+    text-shadow: white 10px 10px 10px;
+}
+.des{
+    background: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.des >div:nth-child(1){
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.des >div:nth-child(2){
+    width: 50%;
+    padding-top: 2rem;
+}
+.des >div:nth-child(3){
+    padding-top: 2rem;
+    width: 50%;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(78, 78, 78);
+    padding: 2.5rem 3.5rem 2rem 3rem;
+}
+footer >div >nav >ul >li{
+    list-style: none;
+}
+footer >div >nav >ul >li >a{
+    text-decoration: none;
+    color: black;
+    margin: 1rem 0;
+}
+footer >div >nav >ul >li >a:hover{
+    border-bottom: solid 1px black;
+}
+.mobile {
+    display: none;
+}
+
+@media (min-width:1501px){
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+}
+/* @media (min-width:851px) and (max-width:1500px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .des >div:nth-child(1) >img{
+        width: 100%;
+    }
+
+} */
+@media (min-width:330px) and (max-width:1365px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .itop{
+        padding-top: 7rem;
+        background: black;
+        width: 99%;
+    }
+    .itop >h1{
+        font-size: 4rem;
+    }
+    .itop >h2{
+        color: gray;
+        margin-top: 3rem;
+        letter-spacing: 1rem;
+    }
+    .itop >img{
+        width: 99%;
+        height: 300px;
+    }   
+    .high {
+        padding: 0.5rem;
+    }
+    .des >div:nth-child(1) >img{
+        width: 100%;
+    }
+    .des >div:nth-child(2){
+        width: 100%;
+        padding-top: 2rem;
+    }
+    .des >div:nth-child(3){
+        padding-top: 2rem;
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer >div:nth-child(1),footer >div:nth-child(2){
+        width: 49%;
+    }
+    footer >div:nth-child(3),footer >div:nth-child(4){
+        width: 49%;
+    }
+}
